@@ -1,1 +1,1 @@
-console.log("Ayush Dubey")
+console.log("Ayush Dubey");
