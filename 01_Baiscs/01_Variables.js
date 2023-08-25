@@ -15,7 +15,8 @@ let accountstate
 
 // we can use table for print all variables
 
-console.table([accountId,email,password,cityname,accountstate])
-
 /* Prefer not to use var 
  because of issue in block scope and functional scope */
+
+console.table([accountId,email,password,cityname,accountstate])
+
