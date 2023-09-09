@@ -52,5 +52,5 @@ const chai = () => {
 // const addTwo = (num1, num2) => {username: "Shiv";}; // if we use curly braces the it prints undefind
 // console.log(addTwo());
 
-const addone = (num1, num2) => ({username: "Shiv"}); // if we use curly braces the it prints undefind
+const addone = (num1, num2) => ({username: "Shiv"}); // if we use curly braces then it prints undefind
 console.log(addone());
