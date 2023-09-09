@@ -34,23 +34,26 @@ const chai = () => {
 //     return num1 + num2;
 // }
 
-// console.log(addTwo(2,4))
+// console.log(addTwo(2,4))  // => 6
 
 
 
 //Implicite return - no need curly braces and return function
+
 // const addTwo = (num1,num2) => num1 + num2;
 // console.log(addTwo(5,7))
 
 
 // We can use 'Paranthisis' instead of curly braces and return
+
 // const addTwo = (num1,num2) =>
 //  (num1 + num2);
-// console.log(addTwo(3,5))
+// console.log(addTwo(3,5))  // ==>> 8
 
 
 // const addTwo = (num1, num2) => {username: "Shiv";}; // if we use curly braces the it prints undefind
-// console.log(addTwo());
+// console.log(addTwo());  // => Undefined
 
 const addone = (num1, num2) => ({username: "Shiv"}); // if we use curly braces then it prints undefind
-console.log(addone());
+
+console.log(addone());   // => { username: 'Shiv' }
