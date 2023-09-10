@@ -30,4 +30,4 @@
     console.log(`You age is ${num}`)
     return num;
   })
-  (24)    // We don't have to write const for arrow function in IIFE
+  (24)     // We don't have to write const for arrow function in IIFE
