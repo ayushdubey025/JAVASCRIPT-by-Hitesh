@@ -20,6 +20,9 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 //     console.log(item);
 // }
 
+
+
+
 // coding.forEach(printMe)
 
 // coding.forEach( (item, index, arr)=> {
