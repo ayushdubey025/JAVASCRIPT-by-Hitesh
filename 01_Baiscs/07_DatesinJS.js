@@ -47,7 +47,7 @@ console.log(newDate2.getDay());
 
 // `${newDate.getDay()} and the time `
 
-newDate3.toLocaleString('default', {
+newDate2.toLocaleString('default', {
     weekday: "long",
     
 })
