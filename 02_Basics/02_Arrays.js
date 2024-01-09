@@ -27,8 +27,9 @@ const Newarr = arr.flat(Infinity)  // It spreads the array in the array format
 
 console.log(Array.isArray("Ayush"));
 console.log(Array.isArray([1,2,8]));
+
 console.log(Array.from("Ayush Dubey"));
-console.log(Array.from({name: "Ayush Dubey"}));  // Interesting for INTERVIEWS
+console.log(Array.from({name: "Ayush Dubey"}));  // from which part do you want for array like key or value. [Interesting for INTERVIEWS]
 
 
 
