@@ -24,7 +24,7 @@ myarr.shift()  // it removes the first position of the array
 //console.log(myarr)
 
 
-// const newArr = myArr.join()
+// const newArr = myArr.join();     // it converts arrays to strings
 
 // console.log(myArr);
 // console.log( newArr);
@@ -34,12 +34,12 @@ myarr.shift()  // it removes the first position of the array
 
 console.log("A ", myarr);
 
-const myn1 = myarr.slice(1, 3)
+const myn1 = myarr.slice(1, 3)  // It doesn't manupulate the original array
 
 console.log(myn1);
 console.log("B ", myarr);
 
 
-const myn2 = myarr.splice(1, 3)  // 
+const myn2 = myarr.splice(1, 3)  // It manupulates the original array
 console.log("C ", myarr);
 console.log(myn2);
