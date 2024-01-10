@@ -27,8 +27,9 @@ const result = Addnum(4, 2);
 
 function UserNameMessage(username)
  {
-  if (!username) {
-    //(username === undefined)
+  if (!username) //(username === undefined)
+   {
+    
     console.log("Please enter your name");
     return;
   }
