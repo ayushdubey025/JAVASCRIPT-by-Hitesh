@@ -11,6 +11,9 @@
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
+// filter takes call back function
+
+
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
@@ -37,7 +40,7 @@ const books = [
   { title: "Book Nine", genre: "Non-Fiction", publish: 1981, edition: 1989 },
 ];
 
-let userBooks = books.filter((bk) => bk.genre === "Non-Fiction");
+// let userBooks = books.filter((bk) => bk.genre === "Non-Fiction");
 userBooks = books.filter((bk) => {
   return bk.edition >= 2006 && bk.genre === "Fiction";
 });
