@@ -19,22 +19,32 @@
     </div>
     <script>
       const parent = document.querySelector('.parent');
+      // const parent = document.querySelector('.parent');
       // console.log(parent);
       // console.log(parent.children);
-      // console.log(parent.children[2].innerHTML);
+      // console.log(parent.children[3].innerHTML= 'Guruwar');
+      
 
       // for(let i =0; i<parent.children.length; i++)
       // {
       //   console.log(parent.children[i].innerHTML);
       // }
 
-      parent.children[1].style.color = "red";
-      console.log(parent.firstElementChild);
-      console.log(parent.lastElementChild);
+    
+    // parent.children[1].style.color ='red';
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild.innerHTML);
 
-      const dayOne = document.querySelector('.day')
-      console.log(dayOne);
-      console.log(dayOne.parentElemet);   // if you have dayOne Variable already and you want to go parent
+
+     const dayOne = document.querySelector('.day');
+     console.log(dayOne);
+
+      console.log(dayOne.parentElement.innerText)
+        // if you have dayOne Variable already and you want to go parent -->
+
+        console.log(dayOne.nextElementSibling);
+
+        console.log("NODES: ",parent.childNodes);
     </script>
   </body>
 </html> 
