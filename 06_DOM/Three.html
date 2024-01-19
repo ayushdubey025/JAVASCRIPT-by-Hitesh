@@ -10,17 +10,31 @@
     
 </body>
 <script>
-    const div = document.createElement('div')
+    const div = document.createElement('div');
     console.log(div);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "generated title")
-    div.style.backgroundColor = "green"
-    div.style.padding = "12px"
-    // div.innerText = "Chai aur code"
-    const addText = document.createTextNode("Chai aur code")
-    div.appendChild(addText)
+    div.className = "js";
+    div.innerHTML = "WebDev";
+    div.id = "one";
+    div.style.backgroundColor = "red";
+    div.style.padding = "10px";
+    div.id = Math.floor(Math.random() * 10);
+    
+    // div.setAttribute("title", "generated title")
+    div.setAttribute("name", "Ayush");
+    
+    // div.innerText = "Javascript";
+    const addText = document.createTextNode("Javacript");
+    div.appendChild(addText);
 
-    document.body.appendChild(div)
+    document.body.appendChild(div);
+
+    // // div.innerText = "Chai aur code"
+    // const addText = document.createTextNode("Chai aur code")
+    // div.appendChild(addText)
+
+    
+     // we can add js with html and show it on live server
+     
+     // document.body.appendChild(div); 
 </script>
 </html>
