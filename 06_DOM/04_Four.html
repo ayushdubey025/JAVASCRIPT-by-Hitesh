@@ -20,6 +20,34 @@
     addLanguage("Python");
     addLanguage('Java');
 
-    
+    // Optimized way
+
+    function addOptiLang(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptiLang('React');
+
+    //   Edit
+
+   const thirdLang = document.querySelector('li: nth-child(3)');
+//    thirdLang.innerHTML = 'golang'
+
+    const newli = document.createElement('li');
+    newli.textContent = "golang";
+    thirdLang.replaceWith(newli);
+
+    // edit
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Typescript</li>'
+
+    // remove
+
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+
 </script>
 </html>
