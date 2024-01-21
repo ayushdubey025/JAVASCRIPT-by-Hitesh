@@ -32,22 +32,24 @@
 
     //   Edit
 
-   const thirdLang = document.querySelector('li: nth-child(3)');
-//    thirdLang.innerHTML = 'golang'
+    const thirdLang = document.querySelector('li:nth-child(3)')
+    // thirdLang.innerHTML = 'golang'
 
-    const newli = document.createElement('li');
+    const newli = document.createElement('li');  // optimaized way
     newli.textContent = "golang";
     thirdLang.replaceWith(newli);
 
     // edit
 
-    const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>Typescript</li>'
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML = '<li>Typescript</li>';
+
 
     // remove
 
-    const lastLang = document.querySelector("li:last-child");
-    lastLang.remove();
+        const lastLang = document.querySelector('li:last-child');
+        lastLang.remove();
+
 
 </script>
 </html>
