@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventListener</title>
+  </head>
+  <body>
+    <h1>Asyncronous</h1>
+    <button class = "stop">Submit</button>
+  </body>
+
+  <script>
+    const callName = function () {
+      console.log("Ayush");
+    };
+
+    const changeText = function () {
+      document.querySelector('h1').innerHTML = "Internship at Microsoft";
+    };
+
+   const stoptext = setTimeout(changeText, 2000);
+   const stopName = setTimeout(callName, 4000);
+
+   document.querySelector('.stop').addEventListener('click',function(e) {
+    clearTimeout(stoptext);
+    clearTimeout(stopName);
+    console.log("STOP");
+   },false)
+
+  </script>
+
+</html>
