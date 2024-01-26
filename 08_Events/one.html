@@ -37,15 +37,15 @@
     // This is the best method for click using 'EventListener'
 
 
-    // TODO:  false use for Bubbling events
-   document.getElementById('images').addEventListener('click', function(e){
-        console.log('Clicked Image');
-    },false); 
+//     // TODO:  false use for Bubbling events
+//    document.getElementById('images').addEventListener('click', function(e){
+//         console.log('Clicked Image');
+//     },false); 
 
-    document.getElementById('owl').addEventListener('click', function(e){
-        console.log('Clicked Owl');
-        e.stopImmediatePropagation();
-    },false);   // ==>>  we will get owl first then image
+//     document.getElementById('owl').addEventListener('click', function(e){
+//         console.log('Clicked Owl');
+//         e.stopImmediatePropagation();
+//     },false);   // ==>>  we will get owl first then image
 
 
 // TODO:  true use for capturing events
@@ -56,4 +56,26 @@
 //     document.getElementById('owl').addEventListener('click', function(e){
 //         console.log('Clicked Owl');
 //     },true);       // ==>>  we will get image first then owl
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log('Clicked Google');
+    // },false);
+
+        document.getElementById('images').addEventListener('click', function(e)
+        {
+            console.log(e.target.tagName);
+           
+
+            if(e.target.tagName === 'IMG')
+            {
+                console.log(e.target.id);
+                let removeIt = e.target.parentNode;
+                e.target.parentNode.remove();
+             
+            }
+        
+        });
+           // removeIt.parentNode.removechild(removeIt);
 </script>
