@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Intership in Microsoft</h1>
+    <button class="start">Start</button>
+    <button class="stop">Stop</button>
+  </body>
+  <script>
+    const startgreet = document.querySelector(".start");
+    const stopgreet = document.querySelector(".stop");
+
+    const greetings = function (intern)
+    {
+      console.log(
+        `congratulations ${intern}! Your are selected for Internship in Microsoft`,
+        Date.now()
+      );
+    };
+
+    let stopgreetings;  // declare the variable outside the scope
+    
+    //start greeting
+    startgreet.addEventListener('click', function(e)
+    {
+      stopgreetings = setInterval(greetings, 1000, "Ayush");
+    },false);
+    
+    // stop greeting
+    stopgreet.addEventListener('click', function(e)
+    {
+    
+      clearInterval(stopgreetings);
+    },false);
+  </script>
+</html>
