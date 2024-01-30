@@ -64,14 +64,18 @@ const PromiseFour = new Promise (function (resolve,reject){
 PromiseFour.then((user) => {
   console.log(user);
   return user.username;
-}).then((username) =>
+})
+.then((username) =>
 {
   console.log(username);
 
-}).catch(function (error)
+})
+.catch(function (error)
 {
   console.log(error);
-}).finally(() => console.log("The promise is either resolved or rejected"));
+})
+.finally(() => console.log("The promise is either resolved or rejected"));
+
 
 // Promise five
 // async, await => they can't handle errors directly
@@ -99,3 +103,30 @@ async function consumePromiseFive()
 }
 
 consumePromiseFive();
+
+// fetch
+
+async function getAllUsers(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+
+        const data = await response.json()
+        console.log(data);
+    } catch (error) {
+        console.log("E: ", error);
+    }
+}
+
+getAllUsers()
+
+fetch('https://api.github.com/users/iamdubey024   ')
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
+
+// promise.all
+// yes this is also available, kuch reading aap b kro.
