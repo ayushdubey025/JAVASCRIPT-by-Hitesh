@@ -36,7 +36,7 @@ Array.prototype.heyAyush = function(){
 
 // myHeroes.heyAyush();   //  array prototype use in array but not in objetct because Object is paraent of Array
 
-// heroPower.heyAyush();  
+// heroPower.heyAyush(); ==>> Type Error 
 
 // inheritance
 
