@@ -1,20 +1,20 @@
 // Dates
 
 let myDate = new Date();
-// console.log(myDate.toString());
-// console.log(myDate.toDateString());
-// console.log(myDate.toTimeString());
+console.log(myDate.toString());
+console.log(myDate.toDateString());
+console.log(myDate.toTimeString());
 
-// console.log(myDate.toLocaleString());
-// console.log(myDate.toLocaleDateString());
-// console.log(myDate.toLocaleTimeString());
+console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleDateString());
+console.log(myDate.toLocaleTimeString());
 
-// console.log(myDate.valueOf());
-// console.log(myDate.getTime());
-// console.log(myDate.getTimezoneOffset());
+console.log(myDate.valueOf());
+console.log(myDate.getTime());
+console.log(myDate.getTimezoneOffset());
 
 
-// *** IMPORTANT NOTE: DATE is a "Object", not a primitive
+//! IMPORTANT NOTE: DATE is a "Object", not a primitive
 
 //console.log(typeof myDate); // => "object"
 
@@ -39,6 +39,7 @@ console.log(myTimeStamp);   // We get data in miliseconds
 
 
 //*** IMPORTANT NOTE: For Interviews we need to get data in Seconds
+
 console.log(Math.floor(myTimeStamp/1000));   // We get data in Seconds
 
 let newDate2 = new Date();
