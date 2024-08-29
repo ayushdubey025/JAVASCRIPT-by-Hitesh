@@ -1,25 +1,25 @@
 // Dates
 
 let myDate = new Date();
-console.log(myDate.toString());
-console.log(myDate.toDateString());
-console.log(myDate.toTimeString());
+// console.log(myDate.toString());
+// console.log(myDate.toDateString());
+// console.log(myDate.toTimeString());
 
-console.log(myDate.toLocaleString());
-console.log(myDate.toLocaleDateString());
-console.log(myDate.toLocaleTimeString());
+// console.log(myDate.toLocaleString());
+// console.log(myDate.toLocaleDateString());
+// console.log(myDate.toLocaleTimeString());
 
-console.log(myDate.valueOf());
-console.log(myDate.getTime());
-console.log(myDate.getTimezoneOffset());
+// console.log(myDate.valueOf());
+// console.log(myDate.getTime());
+// console.log(myDate.getTimezoneOffset());
 
 
 //! IMPORTANT NOTE: DATE is a "Object", not a primitive
 
 //console.log(typeof myDate); // => "object"
 
-// let newDate = new Date(2023,5,8,4,5);
-// console.log(newDate.toString());
+let newDate = new Date(2023,5,8,4,5);
+console.log(newDate.toString());
 
 // let newDate = new Date("2023-1-18");
 //let newDate = new Date("08-30-2023");   // in india we prefer mm-dd-yyyy system 

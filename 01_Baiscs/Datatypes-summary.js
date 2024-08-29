@@ -70,3 +70,11 @@ user2.upi = "9876543210";
 
 console.log(user1.upi);
 console.log(user2.upi);
+
+const arr = [2,4,5,7]
+
+const arr1 = arr
+
+arr1[2] = 6
+console.log(arr[2])
+console.log(arr1[2])
